@@ -35,3 +35,7 @@ The component (such as table) factory abstract class has a kitName that says wha
 Each component factory will have "kits" of objects made from concrete instances of the abstract classes
 
 The concrete ClassicTableComponentFactory subclass knows which concrete components are used to make up the kit for a Classic Table.
+
+- Create an interface for each distinct product, and each product's variants will inherit from it
+- Inside the abstract creator class (such as company, store, etc.), include a list of abstract creator methods for each abstract product
+- Clients work with any concrete factory
